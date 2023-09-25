@@ -526,6 +526,7 @@
 
 
                 -강의 커리큘럼<br>
+
                 ※스프링 MVC1<br>
                 -Http 요청 Servlet/JSP, MVC Framework, Spring MVC패턴을 사용한 웹 페이지 구현<br>
                 1.Servlet/JSP<br>
@@ -596,14 +597,19 @@
 
           -강의 커리큘럼 구성<br>
           ※스프링 DB1<br>
-          -(JDBC, Connection pool, DataSource, Transaction)<br>
+          -(JDBC, Connection pool, DataSource, Transaction, RuntimeException, JdbcTemplate)<br>
           1.JDBC<br>
             -JDBC 직접 사용하여 DB에 연결하는 방법과, DriverManager의 이해 후, CRUD를 구현해보는 로직입니다.<br><br>
           2.Connection pool/DataSource<br>
             -커넥션 풀의 이해와 DataSource의 관계성을 이해하고, HikariCP 커넥션 풀을 구현하여 사용한다.<br>
-            -DriverManager의 dataSource를 사용시 문제점을 dataSource를 통한 커넥션 획득 방법을 추상화하여 문제점을 보완.<br><br>
-          3.Transaction<br>
-             -트랜잭션의 commit과 rollback 사용법에 대해 설명과 추가로 autoCommit, timeOut, rock을 적용하는 로직입니다.
+            -DriverManager의 dataSource를 사용시, 문제점을 dataSource를 통한 커넥션 획득 방법을 추상화하여 문제점을 보완.<br><br>
+          3.Transaction Manager<br>
+            -트랜잭션 매니저의 dataSource를 사용한, connection 생성 후,  트랜잭션 시작(commit, rollback, autoCommit, timeOut, rock) 
+          4.Exception, RuntimeException<br>
+            -체크예외(try, throw), 언체크예외(throw 생략), 예외 interface 도입, 서비스 계층의 순수성을 위해 JdbcTemplate 적용.<br>
+
+          ※스프링 DB2<br>  
+          -()
           </p>
         </div>
       </div>
